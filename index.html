@@ -3,44 +3,117 @@
 	<head>
 		<!--CSS stylesheets, including bootstrap -->
 		<link href="bootstrap.min.css" rel="stylesheet">
-		<link href="styles.css" rel="stylesheet">
 		<link href="index.css" rel="stylesheet">
 	</head>
 
 	<body>
-		<!--Navigation bar-->
-		<div class="navigation">
-			<div class="container">
-				<ul class="pull-left">
+		<div class = "navigation">
+			<div class = "container">
+				<ul class = "home-menu">
+					<li><a href="#" class="name-panel">Michael Topping</a></li>
+				</ul>
+				<ul class = "menu">
 					<li><a href="./index.html">Home</a></li>
-					<li><a href="blog.html">Blog</a></li>
-					<li><a href="./programming.html">Programming</a></li>
-					<li><a href="about.html">About Me</a></li>
+					<li><a href="./research.html">Research</a></li>
+					<li><a href="teaching.html">Teaching</a></li>
+					<li><a href="programming.html">Programming</a></li>
+					<li><a href="./astrophotography.html">Astrophotography</a></li>
+					<li><a href="aboutme.html">About Me</a></li>
 				</ul>
 			</div>
 		</div>
 		
-		<!--Jumbotron-->
-		<div class="jumbotron">
-			<h1>My Web Page.</h1>
-		</div>
 		
-		<!--Recent Posts-->
-		<div class="recent">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 recent-prog">
-						<h3>Programming</h3>
-						<p>Nothing Yet!</p>
+		<div class="slider">
+			<div class="slide active-slide">
+				<div class="container">
+					<div class="slide-header">
+						<h2>Recent Posts</h2>
 					</div>
-					<div class="col-md-6 recent-blog">
-						<h3>Blog Posts</h3>
-						<p>Nothing Yet!</p>
+					<div class="row">
+						<div class="slide-img col-xs-7">
+							<img src="media/ToppingShull15.png">
+						</div>
+						<div class="slide-feature col-xs-5">
+							<h1>Research</h1>
+							<p>THE EFFICIENCY OF STELLAR REIONIZATION: EFFECTS OF ROTATION, METALLICITY,
+AND INITIAL MASS FUNCTION</p>
+						</div>
 					</div>
-				
 				</div>
 			</div>
+			
+			<div class="slide">
+				<div class="container">
+					<div class="slide-header">
+						<h2>Recent Posts</h2>
+					</div>
+					<div class="row">
+						<div class="slide-img col-xs-7">
+							<img src="media/m45.png">
+						</div>
+						<div class="slide-feature col-xs-5">
+							<h1>Astrophotography</h1>
+							<p>Image of M45. Click for more details.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="slide">
+				<div class="container">
+					<div class="slide-header">
+						<h2>Recent Posts</h2>
+					</div>
+					<div class="row">
+						<div class="slide-img col-xs-7">
+							<img src="media/m42.jpg">
+						</div>
+						<div class="slide-feature col-xs-5">
+							<h1>Astrophotography</h1>
+							<p>Image of M42. Click for more details.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="slide">
+				<div class="container">
+					<div class="slide-header">
+						<h2>Recent Posts</h2>
+					</div>
+					<div class="row">
+						<div class="slide-img col-xs-7">
+							<img src="media/M33.png">
+						</div>
+						<div class="slide-feature col-xs-5">
+							<h1>Astrophotography</h1>
+							<p>Image of M33. Click for more details.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+
 		</div>
+		
+		
+<!-- 		Slider naviation -->
+		<div class="slide-nav">
+			<a href="#" class="arrow-left"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/arrow-prev.png"></a>
+			<ul class="slider-dots">
+				<li class="dot active-dot">&bull;</li>
+				<li class="dot">&bull;</li>
+				<li class="dot">&bull;</li>
+				<li class="dot">&bull;</li>
+
+			</ul>
+			<a href="#" class="arrow-right"><img src="media/Rarrow.png"></a>
+		</div>
+		
+	    <script src="jquery-1.11.1.min.js"></script>
+		<script src="scroll.js"></script>
+
 	</body>
 
 </html>

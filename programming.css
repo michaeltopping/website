@@ -1,44 +1,95 @@
-.jumbotron {
-	height: 100px;
-	background-color:#3f3f3f;
-/* 
-	background-image:url("media/m45.png");
-	background-size:cover;
-	background-position:center;
- */
-	border: 1px solid #3f3f3f;
-}
+/* General CSS */
 
-.jumbotron h1 {
-	color: #c7c7c7;
-	position:fixed;
-	top:55px;
+.container {
+	width:960px;
 }
 
 
-/* contains the content */
-.recent-box {
-	background-color:#3f3f3f;
-	height:200px
+
+/* Navigation Bar */
+
+.navigation {
+	background-color: rgba(255, 255, 255, 0.9);
+	border-bottom: 1px solid #dddddd;
+	height: 80px;
+	font-family: "futura-bold", sans-serif;
+	font-size: 20px;
+	
+	padding:5px;
+	
+}
+
+.navigation .name-panel {
+	font-size: 24px;
+	
+	
+}
+
+.navigation .name-panel {
+	color:#555555;
+}
+
+.navigation .home-menu {
+	float:left;
+	list-style: none;
+ 	margin-top: 5px; 
+}
+
+.home-menu > li {
+	display: inline;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+.name-panel a {
+	color: #555555;
+}
+
+.navigation .menu {
+	float:right;
+	list-style: none;
+	margin-top: 5px;
+}
+
+.navigation .container {
+	display:inline;
+}
+
+.menu > li {
+	display: inline;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+.menu a {
+	color: #888888;
 }
 
 
-/* contains the entire box array */
-.recent-program {
-	margin-left:auto;
-	margin-right:auto;
+
+/* Content */
+.content {
+	padding-left:20px;
+	padding-right:20px;
 }
 
-
-/* preview is a class that the columns belong to */
-.preview {
-	height:220px;
+.content h2 {
+	text-align:center;
+	text-decoration:underline;
+	color: #555555;
 }
 
-.preview h3 {
-	color:#c7c7c7;
+.content h3 {
+	text-align:center;
+	color: #666666;
 }
 
-.preview p {
-	color:#c7c7c7;
+.content p {
+	text-align:center;
+	color: #555555;
 }
+
+.content a {
+	color: #888888;
+}
+
